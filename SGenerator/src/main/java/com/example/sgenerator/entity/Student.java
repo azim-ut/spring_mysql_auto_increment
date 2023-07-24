@@ -7,8 +7,8 @@ import org.hibernate.annotations.GenericGenerator;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name="native")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "my")
+    @GenericGenerator(name="my")
     private Long id;
     private String name;
 
